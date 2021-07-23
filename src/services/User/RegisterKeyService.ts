@@ -37,7 +37,7 @@ export class RegisterKeyService {
                 }
             );
     
-            console.log(attestationInfo.data);
+            return attestationInfo.data;
         
         
         }

@@ -27,7 +27,6 @@ export function LoginForm() {
                 'https://127.0.0.1:5000/verify-challenge-assertion'
             );
             const response = await service.call(state);
-            console.log(response.response);
             if (response.response.verified) {
                 history.push('/home');
             } else {
